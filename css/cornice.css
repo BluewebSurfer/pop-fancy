@@ -1,0 +1,510 @@
+body {
+  background-color: white;
+   background-position: right bottom, left top;
+   background-repeat: no-repeat, repeat;
+   font-family: 'Philosopher', sans-serif;
+   
+ }
+.responsive {
+ width: 100%;
+ height: 550px;
+ box-shadow: -2px 7px 13px black;
+
+}
+.respon {
+width: 100%;
+height: 100px;
+object-fit: cover;
+box-shadow: -2px 7px 13px black;
+margin-top: 50px;
+
+}
+
+
+@media screen and (max-width: 480px) {
+.respon {
+ height: 100px;
+}
+}
+
+.respon1 {
+   width: 70%;
+   height: 500px;
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
+   object-fit: cover;
+   box-shadow: -2px 7px 13px black;
+   
+   
+ }
+/* image */
+
+.parent-img{
+
+   width: 100%;
+   
+   z-index: -2;
+   
+}
+
+ .container {
+   position: relative;
+   text-align: center;
+   color: white;
+   margin-top: 20px;
+   position: fixed;
+   width: 100%;
+
+ }
+
+ @media screen and (max-width: 480px) {
+  .container {
+    margin-top: 0px;
+    top: 0;
+  }
+  
+  }
+
+ .bottom-right {
+   position: absolute;
+   bottom: 8px;
+   right: 16px;
+   
+ }
+
+
+ @media screen and (max-width: 480px) {
+   .bottom-right {
+     position: relative;
+   bottom: 8px;
+   right: 0;
+   }
+  
+ }
+
+/* buttons */
+ .button {
+   padding: 1vw 1.3vw;
+   font-size: 1.9vw;
+   text-align: center;
+   cursor: pointer;
+   outline: none;
+   color: rgb(50, 90, 221);
+   background-color: #ffffff;
+   border: none;
+   border-radius: 25px;
+   box-shadow: 2px 4px 10px 0px #000;;
+ }
+ 
+ .button:hover {background-color: #75522b}
+ 
+ .button:active {
+   background-color: #75522b;
+   box-shadow: 0 5px #666;
+   transform: translateY(4px);
+ }
+
+ /* @media screen and (max-width: 480px) {
+   .button {
+     position: absolute;
+   }
+ } */
+
+
+/* responsive nav */
+
+.topnavigation {
+overflow: hidden;
+background-color: #3330;
+}
+
+.topnavigation a {
+float: right;
+display: block;
+color: #000000;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+border-radius:30px;
+background-color: rgb(255, 255, 255);
+
+}
+
+.active {
+background-color: #4c5baf;
+color: white;
+}
+
+.topnavigation .icon {
+display: none;
+}
+
+.dropdown {
+float: right;
+overflow: hidden;
+margin-bottom: 1px;
+padding-top: 2px;
+}
+
+@media screen and (max-width: 480px) {
+.dropdown {
+  margin-bottom: 0px;
+  padding-top: 2px;
+  padding-bottom: 1px;
+}
+
+}
+
+.dropdown .dropbtn {
+font-size: 25px;    
+border: none;
+outline: none;
+color: rgb(139 158 220);
+padding: 14px 16px;
+background-color: inherit;
+font-family: 'Philosopher', sans-serif;
+margin: 0;
+background-color: rgb(255, 255, 255);
+border-radius:30px;
+box-shadow: 2px 4px 10px 0px #000;;
+}
+
+
+@media screen and (max-width: 480px) {
+.dropdown .dropbtn {
+ font-size: 25px;
+}
+
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f900;
+min-width: 160px;
+margin-top: 5px;
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.topnavigation a:hover, .dropdown:hover .dropbtn {
+background-color: rgb(50, 90, 221);
+color: white;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+@media screen and (max-width: 600px) {
+.topnavigation a, .dropdown .dropbtn {
+  display: none;
+}
+.topnavigation a.icon {
+  float: right;
+  display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+.topnavigation.respon1 {position: relative;}
+.topnavigation.respon1 .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnavigation.respon1 a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+.topnavigation.respon1 .dropdown {float: none;}
+.topnavigation.respon1 .dropdown-content {position: relative;}
+.topnavigation.respon1 .dropdown .dropbtn {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+}
+
+
+.avatar {
+vertical-align: middle;
+width: 200px;
+height: 180px;
+border-radius: 50%;
+margin-top: 35px;
+}
+@media screen and (max-width: 480px) {
+.avatar {
+  width: 130px;
+height: 130px;
+/*margin-left: 50px;
+    margin-bottom: 80px;*/
+}
+}
+
+.bottom-left {
+  position: absolute;
+  top: 50%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  
+}
+
+
+@media screen and (max-width: 480px) {
+  .bottom-left {
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+}
+a:-webkit-any-link {
+color: rgb(139 158 220);
+cursor: pointer;
+text-decoration: none;
+font-family: 'Philosopher', sans-serif;
+font-size: 25px;
+border-radius: 30px;
+
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 2px;
+
+}
+
+ .content1 {
+  max-width: 1300px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+ 
+  font-size: 25px;
+}
+
+  /* Rounded border */
+hr.rounded {
+  border-top: 1px solid #bbb;
+  border-radius: 5px;
+  width: 480px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+  hr.rounded {
+    width: 200px;
+ 
+  }
+}
+
+
+/* body */
+
+
+h2{
+
+font-size: 40px;
+text-align: center;
+color: rgb(52, 78, 150);
+}
+
+
+
+
+#example1 {
+  background-image: url(""),
+   url("http://wallpoper.com/images/00/25/71/46/wood-textures_00257146.jpg");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+
+
+.img1 {
+  float: left;
+  width: 400px;
+  height: 400px;
+  border-radius:100%;
+  margin: 10px;
+ 
+}
+@media screen and (max-width: 480px) {
+  .img1 {
+    width: 95%;
+  height: 300px;
+ 
+  }
+}
+.clearfix {
+  overflow: auto;
+  width: 100%;
+  margin: auto;
+  color: white;
+  font-size: 25px;
+ margin-top: 30px;
+  
+}
+
+.img2 {
+  float: right;
+  border-radius:100%;
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  
+}
+@media screen and (max-width: 480px) {
+  .img2 {
+    width: 95%;
+    height: 300px;
+ 
+ 
+  }
+}
+
+/* FOOTER */
+.footer {
+width: 100%;
+background-color: #374d66;
+display: block;
+  padding-bottom: 0px;
+  padding-right: 0px;
+
+}
+
+.inner-footer {
+ width: 95%;
+ margin: auto;
+ padding: 30px 10px;
+ display: flex;
+ flex-wrap: wrap;
+ box-sizing: border-box;
+ justify-content: center;
+}
+
+.footer-items {
+width: 25%;
+padding: 10px 20px;
+box-sizing: border-box;
+color: rgb(194, 188, 255);
+}
+
+.footer-items p {
+font-size: 16px;
+text-align: justify;
+line-height: 25px;
+color: rgb(161, 151, 255);
+}
+
+.footer-items h1 {
+color: #fff;
+}
+
+.border1 {
+height: 3px;
+width: 40px;
+background: #724df7;
+color: #ff9800;
+background-color: #724df7;
+border: 0px;
+}
+
+ul {
+list-style: none;
+color: rgb(161, 151, 255);
+font-size: 20px;
+letter-spacing: 0.5px;	
+padding-left: 0%;
+font-family: 'Merienda', cursive;
+}
+
+ul a {
+text-decoration: none;
+outline: none;
+color: #fff;
+transition: 0.3s;
+}
+
+ul a:hover {
+color: #ff9800;
+}
+
+ul li {
+margin: 25px 0;
+/* height: 25px; */
+}
+
+li i {
+margin-right: 20px;
+}
+
+.social-media {
+width: 100%;
+color: #fff;
+text-align: center;
+font-size: 20px;
+}
+
+.social-media a {
+text-decoration: none;
+}
+
+.social-media i {
+height: 25px;
+width: 25px;
+margin: 20px 10px;
+padding: 4px;
+color: #fff;
+transition: 0.5s;
+}
+
+.social-media i:hover {
+transform: scale(1.5);
+}
+
+.footer-bottom {
+padding: 10px;
+background: #00121b;
+color: #fff;
+font-size: 12px;
+text-align: center;
+}
+.footer-bottom a{
+text-decoration: none;
+color: rgb(61, 116, 134);
+font-size:medium;
+}
+
+/* for tablet mode view */
+
+@media screen and (max-width: 1275px) {
+.footer-items {
+  width: 50%;
+}
+}
+
+/* for mobile screen view */
+
+@media screen and (max-width: 660px) {
+.footer-items {
+  width: 100%;
+}
+}
+
